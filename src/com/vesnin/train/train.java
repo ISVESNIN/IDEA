@@ -22,7 +22,7 @@ public class train {
         while (i<TrainCarCount) {
             trainArr[i] = new TrainCar();
             trainArr[i].carNumber = i;
-            trainArr[i].light = rnLight.nextInt(2);
+            trainArr[i].light = rnLight.nextInt(2); // 1-on 0-off
 
             if (i!=TrainCarCount-1) {
                 trainArr[i].nextCar = i + 1;
